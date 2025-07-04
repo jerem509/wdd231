@@ -1,0 +1,121 @@
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/*===============================HEADER===============================*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 8px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+}
+header>span {
+    font-size: clamp(1.2rem, 10vw, 1.5rem);
+    color:#3D4058;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+/*===============================HAMBURGER NAVIGATION===============================*/
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D4058;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before{
+    content: "\2630";  
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/*===============================BAR OF NAVIGATION===============================*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li:hover {
+    background-color: #E07A5F;
+}
+
+.navigation li.current {
+    background-color: #ddd;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: .7rem 10px;
+    color: #3D4058;
+    border-bottom: solid 1px #ddd;
+}
+
+/*=============================== MAIN STYLING ===============================*/
+main {
+    padding: 0 10px;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 20vw, 2rem);
+}
+
+p {
+    font-family: 'Cardo';
+    line-height: 1.5;
+}
+
+/*=============================== FOOTER STYLING ===============================*/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ccc;
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}

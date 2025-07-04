@@ -3,13 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
-    <meta name="author" content="Charles Jonel">
-    <meta name="description" content="First html page for wdd231">
+    <title>WDD231 - Charles Jonel</title>
+    <meta name="author" content="Jonel Charles">
+    <meta name="description" content="not yet defined" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD231 - CHARLES Jonel</h1>
+            <img id="logo" src="images/logo-jczom-darkred.svg" alt="website logo" width="130">
+            <span>Jonel Charles</span>
+            <div id="hamburger-button" class="hamburger"></div>
     </header>
+    <nav id="navbar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Chamber</h1>
+        <div>
+            <section id="first-section">
+                <h2>About Me</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt distinctio, voluptatibus saepe quae corporis ipsa possimus tempore doloribus provident. Tempora in non, vitae fugiat nisi architecto consectetur sunt asperiores quam!</p>
+            </section>
+            <section id="second-section">
+                <h2>Student Photo</h2>
+                <picture>
+                    <source srcset="images/profile-pic-small.webp" media="(min-width: 600px)">
+                    <img loading="lazy" src="images/profile-pic1.webp" alt="author picture">
+                </picture>
+            </section>
+            <section id="third-section">
+                <h2>Web Certificate Courses</h2>
+                <div id="certificate-btns">
+                    <button id="all-btn">All</button>
+                    <button id="cse-btn">CSE</button>
+                    <button id="wdd-btn">WDD</button>
+                </div>
+                <div id="course-list"></div>
+                <div id="total"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.github.com"><img src="images/github.svg" alt="GitHub icon"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.svg" alt="YouTube icon"></a>
+        </div>
+        <div>
+            <p>Copyright &copy; <span id="currentyear"></span>  Jonel Charles - Haiti</p>
+            <p>Last Modified : <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
