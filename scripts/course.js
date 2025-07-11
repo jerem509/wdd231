@@ -126,9 +126,12 @@ wddBtn.addEventListener('click', () => {
 
 //-------------------------- Function to Show the total number of courses -----------------------------
 function getSumOfCourses(arr) {
-    const total = document.querySelector('#total');
+    const totalId = document.querySelector('#total');
     total.style.display = 'block';
-    total.textContent = `The total number of courses is ${arr.length}.`;
+    const elt = arr.map(item => item.credits);
+    console.log(elt);
+    const totalCourses = elt.reduce((total, eltItem) => total + eltItem);
+    totalId.textContent = `The total number of credits is ${totalCourses}.`;
 }
 
 
