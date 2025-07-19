@@ -3,11 +3,15 @@ const directory = document.querySelector('#directory');
 
 //create async function
 async function showMembers() {
-
-    const response = await fetch(url);
-    const data = await response.json();
-    console.table(data);
-    displayMembers(data);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        console.table(data);
+        displayMembers(data);
+    }
+    catch (error) {
+        console.error(error);
+    }
 }
 
 const displayMembers = (members) => {
@@ -19,6 +23,8 @@ const displayMembers = (members) => {
         //create and append img
         const img = document.createElement('img');
         img.setAttribute('src', member.imageName);
+        img.setAttribute('loading', 'lazy');
+        img.setAttribute('alt', `a logo of ${member.name}`);
         img.setAttribute('class', 'memberImage');
         card.appendChild(img);
         //create and append p element
@@ -43,3 +49,20 @@ const displayMembers = (members) => {
 }
 
 showMembers();
+
+
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
+const directorySel = document.querySelector('#directory');
+
+//change the display type on click of the grid button
+gridButton.addEventListener('click', () => {
+    directorySel.classList.remove('list');
+    directorySel.classList.add('grid');
+});
+
+//change the display type on click of the list button
+listButton.addEventListener('click', () => {
+    directorySel.classList.remove('grid');
+    directorySel.classList.add('list');
+});
