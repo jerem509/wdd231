@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Kay Soley Artisanal",
+        "address": "Rochasse, Jeremie, Haiti",
+        "phoneNumber": "509 37371232",
+        "website": "https://www.kaysoley.ht",
+        "imageName": "images/u-logo.svg",
+        "membershipLevel": 1,
+        "description": "Atelier d’artisanat qui fabrique des objets faits main inspirés de la culture haïtienne.",
+        "established": 1995
+    },
+    {
+        "name": "Gou Lakay Resto",
+        "address": " Bordes, Jérémie, Haïti",
+        "phoneNumber": "509 49230190",
+        "website": "https://www.goulakay.ht",
+        "imageName": "images/goulakay.svg",
+        "membershipLevel": 1,
+        "description": "Restaurant familial offrant une cuisine créole authentique avec des produits locaux.",
+        "established": 1982
+    },
+    {
+        "name": "Ti Mache Nimerik",
+        "address": "Source Dommage, Jérémie, Haïti",
+        "phoneNumber": "509 43210987",
+        "website": "https://www.timachenimerik.com",
+        "imageName": "images/u-logo.svg",
+        "membershipLevel": 2,
+        "description": "Marché en ligne pour artisans et petites entreprises locales à Jérémie.",
+        "established": 2015
+    },
+    {
+        "name": "Lakay Sante",
+        "address": "Rue Paul Eugène Magloire, Jérémie, Haïti",
+        "phoneNumber": "509 43129078",
+        "website": "https://www.lakaysante.ht",
+        "imageName": "images/u-logo.svg",
+        "membershipLevel": 3,
+        "description": "Clinique de soins communautaires promouvant la santé préventive et naturelle.",
+        "established": 2003
+    },
+    {
+        "name": "Coin De Reves",
+        "address": "Bordes, Jérémie, Haïti",
+        "phoneNumber": "509 42137089",
+        "website": "https://www.coindereves.com",
+        "imageName": "images/coindereves.svg",
+        "membershipLevel": 3,
+        "description": "Hotel pour hebergement de personne",
+        "established": 2010
+    },
+    {
+        "name": "Studio Bel Foto",
+        "address": "Eugene Magron, Jérémie, Haïti",
+        "phoneNumber": "509 39012244",
+        "website": "https://www.studiobelfoto.ht",
+        "imageName": "images/u-logo.svg",
+        "membershipLevel": 2,
+        "description": "Studio de photographie professionnelle mettant en valeur les paysages et la vie quotidienne à Jérémie.",
+        "established": 1987
+    },
+    {
+        "name": "Jaden Grand'Anse",
+        "address": "Rochasse, Jérémie, Haïti",
+        "phoneNumber": "509 37446677",
+        "website": "https://www.jadengrandans.com",
+        "imageName": "images/u-logo.svg",
+        "membershipLevel": 1,
+        "description": "Coopérative agricole regroupant des producteurs de café, cacao et fruits tropicaux.",
+        "established": 1997
+    }
+]

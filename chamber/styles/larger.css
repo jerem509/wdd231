@@ -1,0 +1,75 @@
+@media only screen and (min-width: 801px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 60px auto auto auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #half-moon {
+        justify-self: flex-end;
+        grid-column: 4/5;
+    }
+
+    .navigation {
+        display: inline-block;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+        column-gap: .5rem;
+        justify-content: flex-end;
+        padding-left: 10px;
+        background-color: transparent;
+    }
+
+    #navbar ul li a {
+        border-bottom: none;
+        padding: .6rem .5rem;
+    }
+
+    #navbar ul li a:hover {
+        color: #640001;   
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 280px));
+        justify-content: center;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+
+            .card {
+                display: grid;
+                grid-template-columns: 300px repeat(2, 145px) 230px;
+                gap: 10px;
+                border: 1px solid #eee;
+
+                .memberImage {
+                    display: none;
+                }
+            }  
+        
+    }
+}

@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+:root {
+
+    --primary-color: white;
+    --secondary-color: black;
+    --accent-color1: #640001;
+    --accent-color2: #157A6E;
+    --accent-color3: #EEC2CA;
+    --border-color: #eee;
+    --headings: 'Josefin Sans', sans-serif;
+    --gnl-text: 'Cardo', sans-serif;
+}
+
+header,
+main,
+footer {
+    padding: 0 .5rem;
+}
+
+/*============================== TYPOGRAPHY ===================================*/
+h1,
+p,
+h3 {
+    font-family: 'Merriweather Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main p, span {
+    font-family: 'Cardo', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: var(--accent-color2);
+}
+
+p {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+/*============================== HEADER ===================================*/
+header {
+    display: grid;
+    grid-template-columns: 80px auto 24px 44px;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 8px;
+    border-bottom: solid 1px #eee;
+    padding: .2rem .5rem;
+}
+
+header img {
+    display: block;
+    max-width: 60px;
+    height: auto;
+    object-fit: cover;
+}
+
+header span {
+    text-transform: capitalize;
+    color: var(--accent-color1);
+    grid-column: 2/3;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-weight: 600;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--accent-color1);
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    grid-column: 4/5;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+#half-moon {
+    width: 24px;
+    grid-column: 3/4;
+}
+
+/*============================== NAVIGATION ===================================*/
+.navigation {
+    display: none;
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+.navigation.show {
+    display: block;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: var(--accent-color3);
+}
+
+#navbar ul li a {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: .6rem 1rem;
+    border-bottom: solid 1px #eee;
+}
+
+#navbar ul li a:hover {
+    color: var(--accent-color1);
+}
+
+#navbar ul .current {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color1);
+}
+
+/* #navbar ul .current a {
+    color: white;
+} */
+
+/*============================== MAIN ===================================*/
+main {
+    margin: 3rem auto;
+}
+
+main>div {
+    text-align: center;
+}
+
+.display-type-btn {
+    padding: .3rem 1rem;
+    margin: 0 auto;
+}
+
+section {
+    padding-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 280px));
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+
+    .card {
+        height: 100%;
+        width: 90%;
+        box-shadow: 3px 3px 10px #c7c4c4;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 100%;
+    overflow: scroll;
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+
+        &:nth-child(odd) {
+            background-color: #bbb;
+        }
+
+        & > *{
+            text-align: left;
+        }
+
+        .memberImage {
+            display: none;
+        }
+    }
+    
+}
+
+.card {
+    margin: 0 auto;
+    padding: .5rem;
+
+    span, img, a, p {
+        display: block;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        margin: .5rem auto;
+        max-width: 80px;
+        height: auto;
+        object-fit: cover;
+    }
+   
+}
+
+/*============================== FOOTER ===================================*/
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+footer div:nth-child(2) {
+    background-color: var(--accent-color3);
+    padding: .3rem 0;
+}
+
+footer p {
+    margin: .5rem auto;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin-bottom: .5rem;
+}
+
+.social a {
+    background-color: #e7c0c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #e7c0c6;
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
