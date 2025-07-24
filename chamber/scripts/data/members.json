@@ -7,7 +7,9 @@
         "imageName": "images/u-logo.svg",
         "membershipLevel": 1,
         "description": "Atelier d’artisanat qui fabrique des objets faits main inspirés de la culture haïtienne.",
-        "established": 1995
+        "established": 1995,
+        "email": "atizan@kaysoley.ht",
+        "slogan": "Crafting Haitian Culture’s Heart"
     },
     {
         "name": "Gou Lakay Resto",
@@ -17,7 +19,9 @@
         "imageName": "images/goulakay.svg",
         "membershipLevel": 1,
         "description": "Restaurant familial offrant une cuisine créole authentique avec des produits locaux.",
-        "established": 1982
+        "established": 1982,
+        "email": "ligou@goulakay.ht",
+        "slogan": "Authentic Creole Family Flavors"
     },
     {
         "name": "Ti Mache Nimerik",
@@ -27,7 +31,9 @@
         "imageName": "images/u-logo.svg",
         "membershipLevel": 2,
         "description": "Marché en ligne pour artisans et petites entreprises locales à Jérémie.",
-        "established": 2015
+        "established": 2015,
+        "email": "timache@timachenimerik.com",
+        "slogan": "Konekte atizan lokal sou entènèt"
     },
     {
         "name": "Lakay Sante",
@@ -37,7 +43,9 @@
         "imageName": "images/u-logo.svg",
         "membershipLevel": 3,
         "description": "Clinique de soins communautaires promouvant la santé préventive et naturelle.",
-        "established": 2003
+        "established": 2003,
+        "email": "lakaysante@lakaysante.ht",
+        "slogan": "Sante kominotè, swen natirèl"
     },
     {
         "name": "Coin De Reves",
@@ -47,17 +55,21 @@
         "imageName": "images/coindereves.svg",
         "membershipLevel": 3,
         "description": "Hotel pour hebergement de personne",
-        "established": 2010
+        "established": 2010,
+        "email": "coindereves@coindereves.com",
+        "slogan": "Séjour confortable, hospitalité sûre"
     },
     {
-        "name": "Studio Bel Foto",
+        "name": "Studio Bèbèl",
         "address": "Eugene Magron, Jérémie, Haïti",
         "phoneNumber": "509 39012244",
-        "website": "https://www.studiobelfoto.ht",
+        "website": "https://www.studiobebel.ht",
         "imageName": "images/u-logo.svg",
         "membershipLevel": 2,
-        "description": "Studio de photographie professionnelle mettant en valeur les paysages et la vie quotidienne à Jérémie.",
-        "established": 1987
+        "description": "Studio de photographie professionnelle mettant en valeur les portraits, les paysages et la vie quotidienne à Jérémie.",
+        "established": 1987,
+        "email": "belsouvni@studiobebel.ht",
+        "slogan": "Bèl moman lavi sou foto"
     },
     {
         "name": "Jaden Grand'Anse",
@@ -67,6 +79,8 @@
         "imageName": "images/u-logo.svg",
         "membershipLevel": 1,
         "description": "Coopérative agricole regroupant des producteurs de café, cacao et fruits tropicaux.",
-        "established": 1997
+        "established": 1997,
+        "email": "kiltivate@jadengrandans.com",
+        "slogan": "Kiltive richès twopikal Ayiti "
     }
 ]

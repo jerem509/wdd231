@@ -10,7 +10,7 @@
     header,
     main,
     footer {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -70,5 +70,60 @@
 
     .list .card > .memberImage {
         display: none;
+    }
+
+    /*============================== HOME PAGE MAIN ===================================*/
+    #hero-banner button {
+        color: white;
+        font-weight: 600;
+        bottom: 2rem;
+        right: 2rem;
+        transform: scale(1);
+    }
+
+    #events-and-weather {
+        display: grid;
+        grid-template-columns: 1.8fr 1.2fr 1fr;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #events-and-weather>* {
+        width: auto;
+    }
+
+
+    #weather-data {
+        display: flex;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .card>div:nth-child(1)>h2 {
+        font-size: 1rem;
+    }
+        
+    .card>div:nth-child(1)>span {
+        font-size: .75rem;   
+    }
+
+ 
+    .card>div:nth-child(2)>div>p {
+        font-size: .75rem;
+        text-wrap: wrap;  
+    }
+    
+
+    /*=========================Home Page Footer==============================*/
+    #footr {
+        background-color: pink;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+        gap: 1rem;
     }
 }

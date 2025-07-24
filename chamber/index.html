@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremie Chamber of Commerce</title>
+    <meta name="author" content="Jonel Charles">
+
+    <meta name="description"
+        content="This page is the directory of the chamber of commerce of the city of Jeremie/Haiti.">
+    <meta property="og:title" content="Jeremie Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover the chamber of commerce of Jeremie, its members, the events, the city, and how to become a member.">
+    <meta property="og:url" content="https://jerem509.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://jerem509.github.io/wdd231/chamber/images/ref-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/logo-chamber-01.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/logo-chamber01.svg" alt="website logo">
+        <span>Jeremie Chamber Of Commerce</span>
+        <nav id="navbar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+        <img id="half-moon" src="images/half-moon.svg" alt="half black and half transparent half moon">
+        <div id="hamburger-button" class="hamburger"></div>
+    </header>
+
+    <main>
+        <div id="hero-banner">
+            <picture id="hero-picture">
+                <source media="(min-width:1200px)" srcset="images/hero-handshake-xlarge1500.webp">
+                <source media="(min-width:801px)" srcset="images/hero-handshake-large900.webp">
+                <source media="(min-width:320px)" srcset="images/hero-business-team-small.webp">
+                <img src="images/hero-handshake-large900.webp" alt="">
+            </picture>
+            <button type="button">Keynote Tickets</button>
+        </div>
+
+        <h1>Home</h1>
+
+        <section id="events-and-weather">
+            <div id="events">
+                <h2>Events</h2>
+                <div></div>
+            </div>
+
+            <div id="current-weather">
+                <h2>Current Weather</h2>
+                <div id="weather-data">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/04d.png" alt="image depicting the weather condition">
+                    <div>
+                        <p id="current-temp"></p>
+                        <p id="weather-condition"></p>
+                        <p id="high-temp"></p>
+                        <p id="low-temp"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise-time"></p>
+                        <p id="sunset-time"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-days">
+                    <p id="today"></p>
+                    <p id="wednesday"></p>
+                    <p id="thursday"></p>
+                </div>
+            </div>
+        </section>
+
+        <div id="cards"></div>
+    </main>
+
+    <footer id="footr">
+        <div>
+            <span id="chamber-name">Jeremie Chamber Of Commerce</span>
+            <span>angle Alexandre Petion et<br> St Leger-Louis,<br>Jeremie, Grand' Anse, Haiti</span>
+            <span><a href="#" target="_blank">jccom@gmail.com</a></span>
+            <span>(509) 43330000</span>
+        </div>
+        <div class="social">
+            <a href="https://www.github.com"><img src="images/github.svg" alt="GitHub icon"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.svg" alt="YouTube icon"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Jonel Charles</p>
+            <p>Copyright &copy; <span id="currentyear"></span> Jeremie Chamber Of Commerce</p>
+            <p>Last Modified : <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
