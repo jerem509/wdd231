@@ -31,7 +31,7 @@ async function apiFetch(aLink) {
             //----------------Sunrise and Sunset ---------------------------------------
             sunriseTime.innerHTML = `Sunrise: ${sunriseTimeF}`;
             sunsetTime.innerHTML = `Sunset: ${sunsetTimeF}`;
-
+            //----------------- Get the weather icon -----------------------------------
             weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
             weatherIcon.setAttribute('alt',data.weather[0].description);
         }
@@ -57,9 +57,21 @@ async function apiFetchForecast(apiLink) {
         if (response.ok) {
             const data = await response.json();
             console.log(data);
-            aToday.innerHTML = `Today: ${data.list[2].main.temp} &deg;C`;
-            wednesday.innerHTML = `Wednesday: ${data.list[10].main.temp} &deg;C`;
-            thursday.innerHTML = `Thursday: ${data.list[18].main.temp} &deg;C`;
+            // -------------------------Get the days---------------------------------
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+            const day1 = new Date(data.list[0].dt*1000);
+            const day2 = new Date(data.list[8].dt*1000);
+            const day3 = new Date(data.list[16].dt*1000);
+            const day1Index = day1.getUTCDay();
+            const day2Index = day2.getUTCDay();
+            const day3Index = day3.getUTCDay();
+            const day1Name = days[day1Index];
+            const day2Name = days[day2Index];
+            const day3Name = days[day3Index];
+            
+            aToday.innerHTML = `${day1Name}: ${data.list[2].main.temp} &deg;C`;
+            wednesday.innerHTML = `${day2Name}: ${data.list[10].main.temp} &deg;C`;
+            thursday.innerHTML = `${day3Name}: ${data.list[18].main.temp} &deg;C`;
         }
         else {
             throw Error(await response.text());
