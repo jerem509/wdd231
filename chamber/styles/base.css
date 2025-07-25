@@ -349,6 +349,12 @@ div>#current-temp>#temp {
     max-width: 500px;
 }
 
+#weather-data img {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+}
+
 .card>div:nth-child(1) {
     text-align: center;
     border-bottom: 1px solid rgb(83, 82, 82);
@@ -370,6 +376,10 @@ div>#current-temp>#temp {
     grid-template-columns: 25% 1fr;
     gap: .5rem;
     overflow: hidden;
+}
+
+.card>div:nth-child(2)>div {
+    text-align: left;
 }
 
 .card>div:nth-child(2) > div > p {

@@ -18,9 +18,21 @@ async function apiFetch(aLink) {
             highTemp.innerHTML = `High: ${data.main.temp_max} &deg;C`;
             lowTemp.innerHTML = `Low: ${data.main.temp_min} &deg;C`;
             humidity.innerHTML = `Humidity: ${data.main.humidity}`;
-            sunriseTime.innerHTML = `Sunrise: ${data.sys.sunrise}`;
-            sunsetTime.innerHTML = `Sunset: ${data.sys.sunset}`;
-            weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
+            //------------------extract sunrise and sunset time-----------------------
+            const srTime = new Date(data.sys.sunrise * 1000);
+            const sunriseHours = String(srTime.getUTCHours()).padStart(2, '0');
+            const sunriseMinutes = String(srTime.getUTCMinutes()).padStart(2, '0');
+            const sunriseTimeF = `${sunriseHours}:${sunriseMinutes}`;
+            //-------------------------- sunset time --------------------------------
+            const ssTime = new Date(data.sys.sunset * 1000);
+            const sunsetHours = String(ssTime.getUTCHours()).padStart(2, '0');
+            const sunsetMinutes = String(ssTime.getUTCMinutes()).padStart(2, '0');
+            const sunsetTimeF = `${sunsetHours}:${sunsetMinutes}`;
+            //----------------Sunrise and Sunset ---------------------------------------
+            sunriseTime.innerHTML = `Sunrise: ${sunriseTimeF}`;
+            sunsetTime.innerHTML = `Sunset: ${sunsetTimeF}`;
+
+            weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
             weatherIcon.setAttribute('alt',data.weather[0].description);
         }
         else {
