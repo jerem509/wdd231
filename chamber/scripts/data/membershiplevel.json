@@ -1,0 +1,60 @@
+{
+    "NP": {
+      "name": "Non Profit Membership Level",
+      "costs": 200,
+      "benefits": [
+        "Lobbying and Advocacy",
+        "Discounted tickets to all Lunch/Workshop/Tour Events",
+        "Subscription to emailed Weekly Updates outlining events, opportunities and information",
+        "Subscription to Jeremie Business News via the Chamber",
+        "Eligibility to nominate for our Management Committee and vote at the Annual General Meeting",
+        "(Please note: your name will not appear in the Economic Publication)"
+      ]
+    },
+
+    "Bronze": {
+        "name": "Bronze Membership Level",
+        "costs": 250,
+        "benefits": [
+            "Lobbying and advocacy",
+            "2 x tickets to the Chamber Event during the membership period",
+            "Discounted tickets to all lunch, workshop, tour events after the free tickets are used",
+            "Listed on our Membership Directory on our Website",
+            "Recognition as a Corporate Member on the Chamber website, at Chamber Events and in the yearly Economic Publication",
+            "Subscription to emailed Weekly Updates outlining events, opportunities and information",
+            "Promote your business via advertising in the emailed Weekly Updates (6 flyers per year)",
+            "Eligibility to nominate for our Management Committee and vote at the Annual General Meeting"
+        ]
+    },
+
+    "Silver": {
+        "name": "Silver Membership Level",
+        "costs": 450,
+        "benefits": [
+            "Lobbying and advocacy",
+            "4 x tickets to the Chamber Event during the membership period",
+            "Discounted tickets to all lunch, workshop, tour events after the free tickets are used",
+            "The opportunity to give a 5 minute presentation at an Event",
+            "Listed on our Membership Directory on our Website",
+            "Recognition as a Corporate Member on the Chamber website, at Chamber Events and in the yearly Economic Publication",
+            "Promote your business via advertising in the emailed Weekly Updates (8 flyers per year)",
+            "Eligibility to nominate for our Management Committee and vote at the Annual General Meeting"
+        ]
+    },
+    
+    "Gold": {
+        "name": "Gold Membership Level",
+        "costs": 750,
+        "benefits": [
+            "Lobbying and advocacy",
+            "6 x tickets to the Chamber Event during the membership period",
+            "Discounted tickets to all lunch, workshop, tour events after the free tickets are used",
+            "The opportunity to give 2 x 5 minute presentations at an Event",
+            "Recognition as a Corporate Member on the Chamber website, at Chamber Events and in the yearly Economic Publication",
+            "Promote your business via advertising in the emailed Weekly Updates (10 flyers per year)",
+            "Subscription to Jeremie Business News via the Chamber",
+            "Eligibility to nominate for our Management Committee and vote at the Annual General Meeting"
+        ]
+    }
+}
+  

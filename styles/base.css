@@ -204,6 +204,42 @@ div#total {
     padding: .6rem 0;
 }
 
+dialog {
+    width: 500px;
+    max-height: 320px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #ddd;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(rgba(22, 22, 22, 0.856));
+}
+
+dialog::backdrop {
+    background: rgba(46, 46, 46, 0.74);
+}
+
+dialog>* {
+    margin-bottom : .5rem;
+    font-size: .9rem;
+}
+
+dialog button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: .5rem .5rem .2rem;
+    border: 1px solid rgb(0 0 0 / 10%); 
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#WDD131, #CSE110, #CSE111, #CSE210, #WDD130, #WDD231 {
+    cursor: pointer;
+}
+
 /*============================== FOOTER ===================================*/
 footer {
     padding: 1rem 10px;

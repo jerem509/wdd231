@@ -141,89 +141,6 @@ header span {
     text-decoration-color: var(--accent-color1);
 }
 
-/*============================== MAIN ===================================*/
-main {
-    margin: 3rem auto;
-}
-
-main>div {
-    text-align: center;
-}
-
-.display-type-btn {
-    padding: .3rem 1rem;
-    margin: 0 auto;
-}
-
-main > div:nth-child(2) {
-    padding-bottom: 1rem;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 280px));
-    justify-content: center;
-    gap: 10px;
-    overflow: hidden;
-    margin-top: 1.5rem;
-}
-
-.grid > .card {
-    height: 100%;
-    width: 90%;
-    box-shadow: 3px 3px 10px #c7c4c4;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.5rem;
-    width: 100%;
-    overflow: scroll;
-}
-
-.list >  .card {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-}
-
-.list > .card:nth-child(odd) {
-    background-color: #bbb;
-}
-
-.list .card > * {
-    text-align: left;
-}
-
-.list .card .memberImage {
-    display: none;
-}
-
-.card {
-    margin: 0 auto;
-    padding: .5rem;
-}
-
-.card > span,
-.card > img,
-.card > a,
-.card > p {
-    display: block;
-    text-align: center;
-}
-
-.card > a {
-    text-decoration: none;
-}
-
-.card > img {
-    margin: .5rem auto;
-    max-width: 80px;
-    height: auto;
-    object-fit: cover;
-}
-
 /*============================== FOOTER ===================================*/
 footer {
     padding: 1rem 10px;
@@ -266,7 +183,90 @@ footer p {
     height: 22px;
 }
 
-/*============================== HOME PAGE MAIN ===================================*/
+/*============================== DIRECTORY PAGE - MAIN ===================================*/
+main {
+    margin: 3rem auto;
+}
+
+main>div {
+    text-align: center;
+}
+
+.display-type-btn {
+    padding: .3rem 1rem;
+    margin: 0 auto;
+}
+
+main>div:nth-child(2) {
+    padding-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 280px));
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.grid>.card {
+    height: 100%;
+    width: 90%;
+    box-shadow: 3px 3px 10px #c7c4c4;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 100%;
+    overflow: scroll;
+}
+
+.list>.card {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.list>.card:nth-child(odd) {
+    background-color: #bbb;
+}
+
+.list .card>* {
+    text-align: left;
+}
+
+.list .card .memberImage {
+    display: none;
+}
+
+.card {
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+.card>span,
+.card>img,
+.card>a,
+.card>p {
+    display: block;
+    text-align: center;
+}
+
+.card>a {
+    text-decoration: none;
+}
+
+.card>img {
+    margin: .5rem auto;
+    max-width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+
+/*============================== HOME PAGE - MAIN ===================================*/
 /*--------------------- Hero section --------------------------*/
 #hero-banner {
     position: relative;
@@ -406,4 +406,208 @@ div>#current-temp>#temp {
 
 #footr>div:first-child span {
     display: block;
+}
+
+/*============================== JOIN PAGE - MAIN ===================================*/
+#join-main {
+    max-width: 1000px;
+    padding: 0 .5rem .5rem;
+}
+
+#join-main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#join-main > div > h2 {
+    text-align: left;
+    color: var(--accent-color2);
+}
+
+#join-intro > * {
+    text-align: justify;
+    padding: .3rem;
+    line-height: 1.5;
+}
+
+#join-intro h2 {
+    color: var(--accent-color2);
+}
+
+#join-intro p {
+    margin-bottom: .4rem;
+}
+
+#flMembership {
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#join-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .5rem;
+    padding: .3rem;
+}
+
+#join-form>label>input,
+#join-form>label>textarea {
+    display: block;
+    padding: .65rem;
+    font-size: 1rem;
+}
+
+#join-form label {
+    text-align: left;
+}
+
+#join-form span {
+    color: red;
+}
+
+fieldset {
+    width: auto;
+    text-align: left;
+}
+
+fieldset label {
+    margin: 0.4rem;
+    display: block;
+}
+
+#membership-btn {
+    width: 300px;
+    padding: .6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: .6rem;
+    background-color: var(--accent-color1);
+    color: white;
+    border: 1px solid var(--accent-color1);
+}
+
+#membership-btn:hover {
+    background-color: #ad0306;
+
+}
+
+#membership-cards {
+    width: 80%;
+    height: fit-content;
+    padding: .5rem .3rem 1rem;
+    border: 1px solid #c5c4c4;
+    background-color: #eee;
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+} 
+
+#membership-cards > div {
+    border: 1px solid black;
+    padding: .4rem;
+    min-width: 280px;
+    margin: 0 auto;
+    font-size: 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+}
+
+#membership-cards>div button {
+    margin-top: .5rem;
+    padding: .7rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #ddd;
+    color: black;
+    font-style: italic;
+    border: 1px solid #ddd;
+}
+
+#membership-cards>div button:hover {
+    background-color: #b1afaf;
+}
+
+
+@media only screen and (max-width: 630px) {
+    #join-form>label>input,
+    #join-form>label>textarea,
+    #membership-cards,
+    fieldset {
+        width: 100%;
+    }
+}
+
+@media only screen and (631px <= width <= 800px) {
+    #join-form>label>input,
+    #join-form>label>textarea,
+    #membership-cards,
+    fieldset {
+        width: 600px;
+    }
+}
+
+/* --------------------- Dialog Box ------------------------ */
+#dialog-box {
+    min-width: 300px;
+    width: 600px;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #666464;
+    border-radius: 20px;
+
+}
+
+#dialog-box h3 {
+    height: 2.4rem;
+    padding: .45rem;
+}
+
+.bronze-level {
+    background-color: #CD7F32;
+}
+
+.np-level {
+    background-color: #157A6E;
+}
+
+.silver-level {
+    background-color: #C0C0C0;
+}
+
+.gold-level {
+    background-color: #d4b606;
+}
+
+dialog #close-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: .3rem .3rem 0 .3rem;
+    border-radius: 50%;
+    border: 0;
+}
+
+dialog::backdrop {
+    background: rgba(48, 47, 47, 0.7);
+}
+
+#benefits-container {
+    padding: .5rem .5rem .5rem 1.7rem;
+}
+
+#benefits-list {
+    text-align: left;
+    line-height: 1.5;
+    list-style-type:disc;
 }

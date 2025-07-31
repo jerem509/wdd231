@@ -87,6 +87,9 @@ const courseList = document.querySelector('#course-list');
 const allBtn = document.querySelector('#all-btn');
 const cseBtn = document.querySelector('#cse-btn');
 const wddBtn = document.querySelector('#wdd-btn');
+const dialogBox = document.querySelector('#my-modal');
+// const courseBtn = document.querySelectorAll(".course-button");
+const close = document.querySelector('#closeModal');
 
 function showCourse(courseType) {
     courseList.innerHTML = '';
@@ -94,6 +97,7 @@ function showCourse(courseType) {
         const newBtn = document.createElement('button');
         const courseCode = course.subject + course.number;
         newBtn.value = courseCode;
+        newBtn.setAttribute('id', courseCode);
         newBtn.textContent = courseCode;
         newBtn.classList.add('course-button');
         if (course.completed === true) {
@@ -103,6 +107,9 @@ function showCourse(courseType) {
             newBtn.style.backgroundColor = '#grey';
         }
         courseList.appendChild(newBtn);
+        newBtn.addEventListener('click', () => {
+            showDialogBox(course);
+        });
     }
 }
 //-------------------------- Show course on click -----------------------------
@@ -127,11 +134,37 @@ wddBtn.addEventListener('click', () => {
 //-------------------------- Function to Show the total number of courses -----------------------------
 function getSumOfCourses(arr) {
     const totalId = document.querySelector('#total');
-    total.style.display = 'block';
+    totalId.style.display = 'block';
     const elt = arr.map(item => item.credits);
-    console.log(elt);
     const totalCourses = elt.reduce((total, eltItem) => total + eltItem);
     totalId.textContent = `The total number of credits is ${totalCourses}.`;
 }
 
+
+// =================================== Dialog / Modal =====================================    
+function showDialogBox(courseObj) {
+    const btnValue = courseObj.subject + courseObj.number;
+    console.log(btnValue);
+    //----------dialog box heading / course title ----------
+    const h3 = document.querySelector('#course-code');
+    h3.innerHTML = btnValue;
+    //----------------course title -------------------
+    const h4 = document.querySelector('#course-name');
+    h4.textContent = `${courseObj.title}`;
+    //------------ course number of credits ------------------
+    const credits = document.querySelector('#credits');
+    credits.textContent = `${courseObj.credits} credits`;
+    //------------ course description ------------------
+    const desc = document.querySelector('#descp');
+    desc.textContent = courseObj.description;
+    //------------ course description ------------------
+    const certificate = document.querySelector('#certificate');
+    certificate.textContent = `Certificate: ${courseObj.certificate}`;
+    // Show/open the dialog box
+    dialogBox.showModal();
+}
+//close the dialog box
+close.addEventListener('click', () => {
+    dialogBox.close();
+});
 

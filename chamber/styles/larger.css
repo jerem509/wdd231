@@ -72,7 +72,8 @@
         display: none;
     }
 
-    /*============================== HOME PAGE MAIN ===================================*/
+    /*============================== HOME PAGE ===================================*/
+    /* --------------------- Main ------------------ */
     #hero-banner button {
         color: white;
         font-weight: 600;
@@ -117,13 +118,35 @@
         text-wrap: wrap;  
     }
     
-
-    /*=========================Home Page Footer==============================*/
+    /* ------------------ Footer ------------------ */
     #footr {
         background-color: pink;
         display: flex;
         flex-direction: row;
         justify-content: space-around; 
         gap: 1rem;
+    }
+
+    /*========================= JOIN PAGE ==============================*/
+    /* ------------------ Form ------------------ */
+    #join-main > div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));   }
+
+    #join-form>label>input,
+    #join-form>label>textarea {
+        width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    #membership-btn {
+        width: 300px;
+    }
+
+    #membership-cards {
+        width: 100%;
     }
 }

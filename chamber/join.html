@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <meta name="author" content="Jonel Charles">
+
+    <meta name="description"
+        content="This page contains the form to help potential members submit their candidacy to the chamber of commerce of Jermie, Haiti.">
+    <meta property="og:title" content="Jeremie Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover the chamber of commerce of Jeremie, its members, the events, the city, and how to become a member.">
+    <meta property="og:url" content="https://jerem509.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://jerem509.github.io/wdd231/chamber/images/ref-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/logo-chamber-01.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/logo-chamber01.svg" alt="website logo">
+        <span>Jeremie Chamber Of Commerce</span>
+        <nav id="navbar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+        <img id="half-moon" src="images/half-moon.svg" alt="half black and half transparent half moon">
+        <div id="hamburger-button" class="hamburger"></div>
+    </header>
+    
+    <main id="join-main">
+        <section id="join-intro">
+            <h1>Membership Application</h1>
+            <div>
+                <h2>You're invited!</h2>
+                <p>The Jeremie Chamber of Commerce warmly invites your application for membership. Our mission is to foster local economic
+                growth, support business development, and build a strong, vibrant community where businesses and entrepreneurs thrive.
+                As a member, you gain access to valuable opportunities for networking, business promotion, advocacy, and support within
+                the Jeremie business community.</p>
+                
+                <p>Whether you are a new entrepreneur or an established business leader, your membership helps strengthen our collective
+                voice and supports the prosperity of Jeremie and the surrounding region. Thank you for considering joining us—we are
+                excited to work together to support your success and the growth of our local economy.</p>
+            </div>
+            <div>
+                <h2>Membership Criteria and Benefits</h2>
+                <p><span id="flMembership">Full membership</span> is open to any individual, business, organization, or company located in the Jeremie area or its
+                surrounding regions that is involved in any trade, business, profession, or occupation. Financial members enjoy full
+                voting rights, representation, and eligibility to serve on committees and the chamber’s board.</p>
+
+                <p>Members will be notified of events and updates through email, with additional publicity through local newspapers and
+                radio stations.</p>
+                
+                <p>By submitting this application, you consent to the Chamber publishing your business details in the public member
+                directory on our website.</p>
+            </div>
+        </section>
+        <div>
+            
+            <form id="join-form" action="thanks.html" method="get">
+                <label>First Name<span>*</span>
+                    <input type="text" name="firstName" id="fname" pattern="[A-Za-z\s-]+" autocomplete="family-name" required>
+                </label>
+                <label>First Name<span>*</span>
+                    <input type="text" name="lastName" id="lname" pattern="[A-Za-z\s-]+" autocomplete="given-name" required>
+                </label>
+                <label>Email<span>*</span>
+                    <input type="email" name="email" id="email" placeholder="someone@mailprovider.com" autocomplete="email" required>
+                </label>
+                <label>Phone number<span>*</span>
+                    <input type="phone" name="phone" id="phone" placeholder="509xxxxxxxxx" autocomplete="tel" required>
+                </label>
+                <label>Organization name
+                    <input type="text" name="businessname" id="bizname" pattern="[A-Za-z\s-]+" autocomplete="organization">
+                </label>
+                <label>Organizational title
+                    <input type="text" name="businesstitle" id="biztitle" autocomplete="organization-title">
+                </label>
+                <label for="bizdescription">Business/Organization description<span>*</span>
+                    <textarea name="business-description" id="bizdescription" rows="7" required></textarea>
+                </label>
+                <fieldset>
+                    Membership level<span>*</span>
+                    <label><input type="radio" name="bizness-level" id="np-membership"> Non Profit</label>
+                    <label><input type="radio" name="bizness-level" id="bronze-membership"> Bronze</label>
+                    <label><input type="radio" name="bizness-level" id="silver-membership"> Silver</label>
+                    <label><input type="radio" name="bizness-level" id="gold-membership"> Gold</label>
+                </fieldset>
+
+                <input type="datetime" name="timestamp" id="timestamp" hidden>
+        
+                <button type="submit" id="membership-btn">Apply for membership</button>
+            </form>
+            <div id="membership-cards">
+                <h2>Membership Levels</h2>
+                <div id="np-box">
+                    <p>Non Profit Membership Level</p>
+                    <button type="button" id="np-level">More information</button>
+                </div>
+                <div id="bronze-box">
+                    <p>Bronze Membership Level</p>
+                    <button type="button" id="bronze-level">More information</button>
+                </div>
+                <div id="silver-box">
+                    <p>Silver Membership Level</p>
+                    <button type="button" id="silver-level">More information</button>
+                </div>
+                <div id="gold-box">
+                    <p>Gold Membership Level</p>
+                    <button type="button" id="gold-level">More information</button>
+                </div>
+
+                <dialog id="dialog-box">
+                    <h3 id="membership-name"></h3>
+                    <button id="close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />  
+                        </svg>
+                    </button>
+                    <div id="benefits-container">
+                        <ul id="benefits-list"></ul>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footr">
+        <div>
+            <span id="chamber-name">Jeremie Chamber Of Commerce</span>
+            <span>angle Alexandre Petion et<br> St Leger-Louis,<br>Jeremie, Grand' Anse, Haiti</span>
+            <span><a href="#" target="_blank">jccom@gmail.com</a></span>
+            <span>(509) 43330000</span>
+        </div>
+        <div class="social">
+            <a href="https://www.github.com"><img src="images/github.svg" alt="GitHub icon"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.svg" alt="YouTube icon"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Jonel Charles</p>
+            <p>Copyright &copy; <span id="currentyear"></span> Jeremie Chamber Of Commerce</p>
+            <p>Last Modified : <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
