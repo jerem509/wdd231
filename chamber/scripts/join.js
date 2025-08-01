@@ -50,6 +50,7 @@ async function showMembership(level) {
 
 function displayMembership(membershipsData, level) {
     benefitsList.innerHTML = "";
+    membershipName.innerHTML = '';
     membershipName.textContent = membershipsData[level].name;
     const benefitsArray = membershipsData[level].benefits;
     console.log(benefitsArray);

@@ -12,7 +12,7 @@
     <meta property="og:title" content="Jeremie Chamber of Commerce">
     <meta property="og:description"
         content="Discover the chamber of commerce of Jeremie, its members, the events, the city, and how to become a member.">
-    <meta property="og:url" content="https://jerem509.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://jerem509.github.io/wdd231/chamber/join.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://jerem509.github.io/wdd231/chamber/images/ref-logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/join.js" defer></script>
+    <script src="scripts/showCards.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
         <span>Jeremie Chamber Of Commerce</span>
         <nav id="navbar" class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="current"><a href="#">Chamber Project</a></li>
                 <li><a href="#">Final Project</a></li>
             </ul>
@@ -42,10 +43,10 @@
         <img id="half-moon" src="images/half-moon.svg" alt="half black and half transparent half moon">
         <div id="hamburger-button" class="hamburger"></div>
     </header>
-    
+
     <main id="join-main">
+        <h1>Membership Application</h1>
         <section id="join-intro">
-            <h1>Membership Application</h1>
             <div>
                 <h2>You're invited!</h2>
                 <p>The Jeremie Chamber of Commerce warmly invites your application for membership. Our mission is to foster local economic
@@ -70,9 +71,9 @@
                 directory on our website.</p>
             </div>
         </section>
+
         <div>
-            
-            <form id="join-form" action="thanks.html" method="get">
+            <form id="join-form" action="thankyou.html" method="get">
                 <label>First Name<span>*</span>
                     <input type="text" name="firstName" id="fname" pattern="[A-Za-z\s-]+" autocomplete="family-name" required>
                 </label>
@@ -83,7 +84,7 @@
                     <input type="email" name="email" id="email" placeholder="someone@mailprovider.com" autocomplete="email" required>
                 </label>
                 <label>Phone number<span>*</span>
-                    <input type="phone" name="phone" id="phone" placeholder="509xxxxxxxxx" autocomplete="tel" required>
+                    <input type="tel" name="phone" id="phone" placeholder="509xxxxxxxxx" autocomplete="tel" required>
                 </label>
                 <label>Organization name
                     <input type="text" name="businessname" id="bizname" pattern="[A-Za-z\s-]+" autocomplete="organization">
@@ -102,7 +103,7 @@
                     <label><input type="radio" name="bizness-level" id="gold-membership"> Gold</label>
                 </fieldset>
 
-                <input type="datetime" name="timestamp" id="timestamp" hidden>
+                <input type="datetime-local" name="timestamp" id="timestamp" hidden>
         
                 <button type="submit" id="membership-btn">Apply for membership</button>
             </form>
@@ -126,7 +127,7 @@
                 </div>
 
                 <dialog id="dialog-box">
-                    <h3 id="membership-name"></h3>
+                    <h3 id="membership-name">Whatever membership</h3>
                     <button id="close-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323">
                             <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />  
@@ -144,7 +145,7 @@
         <div>
             <span id="chamber-name">Jeremie Chamber Of Commerce</span>
             <span>angle Alexandre Petion et<br> St Leger-Louis,<br>Jeremie, Grand' Anse, Haiti</span>
-            <span><a href="#" target="_blank">jccom@gmail.com</a></span>
+            <span><a href="#" target="_blank" id="comp-email">jccom@gmail.com</a></span>
             <span>(509) 43330000</span>
         </div>
         <div class="social">

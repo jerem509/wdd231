@@ -32,7 +32,7 @@ footer {
 }
 
 /*============================== TYPOGRAPHY ===================================*/
-h1,
+h1, h2,
 p,
 h3 {
     font-family: 'Merriweather Sans', Verdana, Geneva, Tahoma, sans-serif;
@@ -408,10 +408,16 @@ div>#current-temp>#temp {
     display: block;
 }
 
+#comp-email {
+    text-decoration: none;
+    color: rgb(1, 1, 92);
+}
+
 /*============================== JOIN PAGE - MAIN ===================================*/
 #join-main {
     max-width: 1000px;
     padding: 0 .5rem .5rem;
+    margin: 0 auto;
 }
 
 #join-main > div {
@@ -465,7 +471,7 @@ div>#current-temp>#temp {
 }
 
 #join-form span {
-    color: red;
+    color: rgb(175, 4, 4);
 }
 
 fieldset {
@@ -507,6 +513,48 @@ fieldset label {
     flex-direction: column;
     gap: .5rem;
 } 
+
+#np-box,
+#bronze-box,
+#silver-box,
+#gold-box {
+    animation: card-border-color 3s ease-in 100ms 2 forwards;
+}
+
+@keyframes card-border-color {
+    25% {
+        border: 3px solid blue;
+    }
+
+    50% {
+        border: 3px solid green;
+    }
+
+    75% {
+        border: 3px solid red;
+    }
+
+    100% {
+        border: 1px solid #979595;
+    }
+}
+
+@keyframes cards-container {
+    25% {
+        border: 3px solid #CD7F32;
+    }
+
+    50% {
+        border: 3px solid var(--accent-color1);
+    }
+
+    75% {
+        border: 3px solid #d4b606;
+    }
+    100% {
+        border: 2px solid #C0C0C0;
+    }
+}
 
 #membership-cards > div {
     border: 1px solid black;
@@ -610,4 +658,13 @@ dialog::backdrop {
     text-align: left;
     line-height: 1.5;
     list-style-type:disc;
+}
+
+/* ============================ THANK YOU PAGE ============================= */
+#thankyou-hdn {
+    text-align: center;
+}
+
+#info-container {
+    min-height: 63vh;
 }

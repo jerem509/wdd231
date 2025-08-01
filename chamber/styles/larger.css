@@ -136,10 +136,12 @@
     #join-form>label>input,
     #join-form>label>textarea {
         width: 100%;
+        max-width: 600px;
     }
 
     fieldset {
         width: 100%;
+        max-width: 600px;
     }
 
     #membership-btn {
@@ -148,5 +150,9 @@
 
     #membership-cards {
         width: 100%;
+    }
+
+    #membership-cards h2 {
+        color: var(--accent-color2);
     }
 }
