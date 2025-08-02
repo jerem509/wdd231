@@ -75,22 +75,22 @@
         <div>
             <form id="join-form" action="thankyou.html" method="get">
                 <label>First Name<span>*</span>
-                    <input type="text" name="firstName" id="fname" pattern="[A-Za-z\s-]+" autocomplete="family-name" required>
+                    <input type="text" name="firstName" id="fname" autocomplete="family-name" required>
                 </label>
                 <label>First Name<span>*</span>
-                    <input type="text" name="lastName" id="lname" pattern="[A-Za-z\s-]+" autocomplete="given-name" required>
+                    <input type="text" name="lastName" id="lname" autocomplete="given-name" required>
                 </label>
                 <label>Email<span>*</span>
-                    <input type="email" name="email" id="email" placeholder="someone@mailprovider.com" autocomplete="email" required>
+                    <input type="email" name="email" id="email" placeholder="someone@mailprovider.com" autocomplete="email" title="Please enter a valid email address, e.g. user@example.com" required>
                 </label>
                 <label>Phone number<span>*</span>
                     <input type="tel" name="phone" id="phone" placeholder="509xxxxxxxxx" autocomplete="tel" required>
                 </label>
                 <label>Organization name
-                    <input type="text" name="businessname" id="bizname" pattern="[A-Za-z\s-]+" autocomplete="organization">
+                    <input type="text" name="businessname" id="bizname" pattern="[A-Za-z\s-0-9]+" autocomplete="organization">
                 </label>
                 <label>Organizational title
-                    <input type="text" name="businesstitle" id="biztitle" autocomplete="organization-title">
+                    <input type="text" name="businesstitle" id="biztitle" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title">
                 </label>
                 <label for="bizdescription">Business/Organization description<span>*</span>
                     <textarea name="business-description" id="bizdescription" rows="7" required></textarea>

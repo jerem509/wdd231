@@ -666,5 +666,9 @@ dialog::backdrop {
 }
 
 #info-container {
-    min-height: 63vh;
+    margin: 0 auto;
+    max-width: 750px;
+    min-height: 50vh;
+    text-align: left;
+    line-height: 1.5;
 }

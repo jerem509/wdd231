@@ -34,3 +34,27 @@ dateOfModification.textContent = `${new Intl.DateTimeFormat(
         dateStyle: "full"
     }
 ).format(today)}`;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const infoContainer = document.querySelector("#info-container");
+    if (infoContainer) {
+        const params = new URLSearchParams(window.location.search);
+        const firstName = params.get('firstName');
+        const lastName = params.get('lastName');
+        const email = params.get('email');
+        const phoneNumber = params.get('phone');
+        const businessName = params.get('businessname');
+        const businessTitle = params.get("businesstitle");
+        const businessdesc = params.get("business-description");
+        const timestamp = params.get('timestamp');
+
+        infoContainer.innerHTML = `<p><strong>First Name</strong>: ${firstName};</p>
+            <p><strong>Last Name</strong>: ${lastName};</p>
+            <p><strong>Email</strong>: ${email};</p>
+            <p><strong>Mobile Number</strong>: ${phoneNumber};</p>
+            <p><strong>Business Name</strong>: ${businessName};</p>
+            <p><strong>Business Title</strong>: ${businessTitle};</p>
+            <p><strong>Business Description</strong>: ${businessdesc}</p>
+            <p><strong>Current Date Timestamp</strong>: ${timestamp}</p>`;
+    };
+});
