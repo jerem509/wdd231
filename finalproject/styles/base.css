@@ -1,0 +1,267 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #2e2d2d;
+}
+
+:root {
+    --primary-color: #f3f3f3;
+    --secondary-color: #292828;
+    --accent-color1: #000033; 
+    --accent-color2: #51c7e1;
+}
+
+/* ================================ Typography =================================== */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+p, span, main li {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: var(--accent-color1);
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: var(--accent-color1);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================================= Header ====================================== */
+header {
+    display: grid;
+    grid-template-columns: 1fr 44px;
+    align-items: center;
+    padding: .5rem 0 .5rem .5rem;
+    background-color: var(--accent-color1);
+}
+
+#logo-company {
+    max-width: min(150px, 25vw);
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#navbar {
+    display: none;
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+#navbar.show {
+    display: block;
+}
+
+#navlist {
+    margin-top: .3rem;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 7px;
+}
+
+#navlist li {
+    width: 100%;
+    height: 44px;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem;
+    width: 98%;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    color: var(--accent-color2);
+
+}
+
+.nav-link:hover {
+    border: var(--accent-color2) 2px solid;
+    border-radius: 10px;
+}
+
+#hamburger-menu {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#hamburger-menu::before {
+    content: "\2630";
+    color: var(--accent-color2);
+    font-size: 40px;
+}
+
+#hamburger-menu.show::before {
+    content: "\00D7";
+    color: var(--accent-color2);
+    font-size: 40px;
+}
+
+
+
+/* ================================= Footer ====================================== */
+footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--accent-color1);
+}
+
+.social {
+    margin: .5rem 0;
+}
+
+.social img {
+    width: 32px;
+    height: auto;
+    margin: 15px 5px;
+    padding: .3rem;
+    background-color: var(--primary-color);
+    border-radius: 25%;
+}
+
+.social img:hover {
+    border: solid 3px var(--accent-color2);
+}
+
+footer p {
+    line-height: 1.7;
+}
+
+#footer-links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 95%;
+    row-gap: 1rem;
+}
+
+.footr-link {
+    text-align: center;
+}
+
+#ft-link-first {
+    grid-column: 1/span 2;
+}
+#ft-link-secnd {
+    grid-column: 3/span 2;
+}
+#ft-link-third {
+    grid-column: 5/span 2;
+}
+#ft-link-fourth {
+    grid-column: 1/span 3;
+}
+#ft-link-fifth {
+    grid-column: 4/span 3;
+}
+
+.footr-link a {
+    color: var(--accent-color2);
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+.footr-link a:hover {
+    background-color: var(--accent-color2);
+    color: var(--accent-color1);
+}
+
+#address-n-copyrite p {
+    color: var(--primary-color);
+    font-size: .8rem;
+}
+
+#address-n-copyrite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+}
+
+/* ======================================== QUERIES =========================================== */
+
+@media only screen and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+        background-color: var(--accent-color1  );
+    }
+
+    #navbar {
+        display: block;
+    }
+
+    #navlist {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    #navlist li {
+        width: auto;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    #footer-links {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        width: 95%;
+        row-gap: 0;
+    }
+
+    #ft-link-first, 
+    #ft-link-secnd,
+    #ft-link-third,
+    #ft-link-fourth,
+    #ft-link-fifth {
+        grid-column: auto;
+    }
+
+    #address-n-copyrite {
+        height: 70px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #address-n-copyrite>div {
+        height: inherit;
+        vertical-align: top;
+    }
+}

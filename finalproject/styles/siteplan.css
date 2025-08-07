@@ -1,0 +1,73 @@
+/* ================================ MAIN (Mobile First) =================================== */
+main {
+    background-color: var(--primary-color);
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+#main-container>div,
+.wireframe-container {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main ul li::before {
+    content: '- ';
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 90%;
+
+}
+
+tr td:first-of-type, tr th:first-of-type{
+    width: 25%;
+}
+
+thead th {
+    font-size: 1.15rem;
+}
+
+th {
+    width: 130px;
+}
+
+th,
+td {
+    text-align: left;
+    vertical-align: top;
+    text-justify: distribute;
+    padding: .3rem;
+    border: 1px solid var(--accent-color1);
+}
+
+.wireframe-container span {
+    font-weight: 600;
+}
+
+.wireframes-img {
+    width: 350px;
+    height: auto;
+}
+
+button {
+    padding: .3rem .5rem;
+    border-radius: 10px;
+}
+
+
+/* ==================================== MEDIA QUERIES (Larger Views) ======================================== */
+@media only screen and (min-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    .desktop-wf {
+        width: 400px;
+        height: auto;
+    }
+}
