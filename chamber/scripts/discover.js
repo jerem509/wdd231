@@ -19,12 +19,12 @@ const displayActivities = (activities) => {
     activities.forEach(activity => {
         // create card element
         const div = document.createElement('div');
-        div.setAttribute('id', 'card');
+        div.setAttribute('class', 'd-card');
         div.innerHTML = `<h2 id="card-title">${activity.name}</h2>
-            <div id="card-pic-container"><img src=${activity.url} alt=${activity.name}></div>
+            <div class="card-pic-container"><img src=${activity.url} alt=${activity.name} loading="lazy"></div>
             <p>${activity.description}</p>
             <span>${activity.address}</span>
-            <button type="button" id="learn-more">Learn More</button>`;
+            <button type="button" class="learn-more">Learn More</button>`;
         cardContainer.appendChild(div);
     });
 

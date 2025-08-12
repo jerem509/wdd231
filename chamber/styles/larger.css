@@ -168,7 +168,7 @@
 
  /*========================= DISCOVER PAGE ==============================*/
 @media only screen and (min-width:641px) {
-    #card {
+    .d-card {
         max-width: 550px;
         min-width: 300px;
         grid-template-areas:
@@ -184,5 +184,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
+    }
+
+    .d-card img:hover {
+        box-shadow: 1px 1px 10px var(--accent-color2);
     }
 }

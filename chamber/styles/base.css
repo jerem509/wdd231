@@ -691,7 +691,7 @@ dialog::backdrop {
     font-size: 1.5rem;
 }
 
-#card {
+.d-card {
     max-width: 450px;
     min-width: 300px;
     background-color: #a7e0daaf;
@@ -708,17 +708,16 @@ dialog::backdrop {
     "learnmore";
 }
 
-#card p, 
-#card img {
+.d-card p {
     margin: .5rem;
 }
 
-#card-pic-container {
+.card-pic-container {
     width: 100%;
     grid-area: picture;
 }
 
-#card-pic-container img {
+.card-pic-container img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -726,7 +725,7 @@ dialog::backdrop {
 
 }
 
-#card p {
+.d-card p {
     font-size: .8rem;
     text-align: left;
     grid-area: para;
@@ -741,7 +740,7 @@ dialog::backdrop {
     margin: 0 auto;
 }
 
-#card span {
+.d-card span {
     display: block;
     margin: .5rem;
     font-size: .8rem;
@@ -749,7 +748,7 @@ dialog::backdrop {
     grid-area: address;
 }
 
-#learn-more {
+.learn-more {
     background-color: var(--accent-color1);
     border: 1px solid var(--accent-color1);
     border-radius: .6rem;
@@ -764,7 +763,7 @@ dialog::backdrop {
     grid-area: learnmore;
 }
 
-#card h2 {
+.d-card h2 {
     grid-area: name;
     margin: 1rem auto .5rem;
     color: var(--accent-color2);
