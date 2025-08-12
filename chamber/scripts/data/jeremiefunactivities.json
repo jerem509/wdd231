@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Savor a Pisket Plate",
+    "address": "Local restaurants, Jérémie, Haiti",
+    "cost": "10 USD",
+    "description": "Taste Jérémie’s signature pisket plate—tender goat meat with local spices, served with plantains and rice.",
+    "url": "images/discoverpage/d-pisket.webp"
+  },
+  {
+    "name": "Visit the Fort of Marfranc",
+    "address": "Marfranc, Grand'Anse, Haiti",
+    "cost": "5 USD",
+    "description": "Step into history at Fort Marfranc and enjoy panoramic views of the surrounding valleys.",
+    "url": "images/discoverpage/d-fortmarfranc.webp"
+  },
+  {
+    "name": "Attend National Flag Day Festivities on May 18",
+    "address": "Public squares, Jérémie, Haiti",
+    "cost": "Free",
+    "description": "Celebrate Haiti’s history with music, parades, and patriotic speeches on National Flag Day.",
+    "url": "images/discoverpage/d-mai18.webp"
+  },
+  {
+    "name": "Explore Anse du Clerc Beach",
+    "address": "Anse du Clerc, Grand'Anse, Haiti",
+    "cost": "15 USD",
+    "description": "Discover a peaceful beach paradise, perfect for swimming, sunbathing, and fresh seafood.",
+    "url": "images/discoverpage/d-anzdikle.webp"
+  },
+  {
+    "name": "Discover Macaya National Park",
+    "address": "Massif de la Hotte, Grand'Anse, Haiti",
+    "cost": "50 USD",
+    "description": "Hike through lush forests, rare orchids, and unique wildlife in Macaya National Park.",
+    "url": "images/discoverpage/d-forest-macaya.webp"
+  },
+  {
+    "name": "Explore the Caves under Macaya",
+    "address": "Macaya region, Grand'Anse, Haiti",
+    "cost": "20 USD",
+    "description": "Venture into mysterious limestone caves filled with stunning natural formations.",
+    "url": "images/discoverpage/d-anba-makaya.webp"
+  },
+  {
+    "name": "Visit St. Louis Cathedral & Place Dumas",
+    "address": "Centre-ville, Jérémie, Haiti",
+    "cost": "Free",
+    "description": "Admire the grand St. Louis Cathedral, then stroll through the charming Place Dumas.",
+    "url": "images/discoverpage/d-katedral-st-louis-jeremie.webp"
+  },
+  {
+    "name": "Celebrate the Carnival of February",
+    "address": "Downtown Jérémie, Haiti",
+    "cost": "10 USD",
+    "description": "Experience vibrant costumes, parades, and music during Jérémie’s colorful February carnival.",
+    "url": "images/discoverpage/d-kanaval-j.webp"
+  }
+]

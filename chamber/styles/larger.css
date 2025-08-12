@@ -15,7 +15,11 @@
     }
 
     header {
-        grid-template-columns: 60px auto auto auto;
+        grid-template-columns: 95px auto auto auto;
+    }
+
+    header img {
+        max-width: 95px;
     }
 
     .hamburger {
@@ -154,5 +158,31 @@
 
     #membership-cards h2 {
         color: var(--accent-color2);
+    }
+
+    #hero-discover source, #hero-discover img { 
+        border-radius: 15%;
+    }
+}
+
+
+ /*========================= DISCOVER PAGE ==============================*/
+@media only screen and (min-width:641px) {
+    #card {
+        max-width: 550px;
+        min-width: 300px;
+        grid-template-areas:
+        "name name"
+        "picture para"
+        "picture address"
+        "learnmore learnmore";
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    #main-discover {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 }

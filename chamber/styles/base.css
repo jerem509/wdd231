@@ -21,19 +21,12 @@ body {
     --gnl-text: 'Cardo', sans-serif;
 }
 
-/* header,
-main,
-footer {
-    padding: 0 .5rem;
-} */
-
 .dark {
     background-color: black;
 }
 
 /*============================== TYPOGRAPHY ===================================*/
 h1, h2,
-p,
 h3 {
     font-family: 'Merriweather Sans', Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -57,7 +50,7 @@ p {
 /*============================== HEADER ===================================*/
 header {
     display: grid;
-    grid-template-columns: 80px auto 24px 44px;
+    grid-template-columns: 70px auto 24px 44px;
     grid-template-rows: auto auto;
     align-items: center;
     column-gap: 8px;
@@ -67,7 +60,7 @@ header {
 
 header img {
     display: block;
-    max-width: 60px;
+    max-width: 70px;
     height: auto;
     object-fit: cover;
 }
@@ -76,7 +69,7 @@ header span {
     text-transform: capitalize;
     color: var(--accent-color1);
     grid-column: 2/3;
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
     font-weight: 600;
 }
 
@@ -671,4 +664,112 @@ dialog::backdrop {
     min-height: 50vh;
     text-align: left;
     line-height: 1.5;
+}
+
+/*============================== DISCOVER PAGE - MAIN ===================================*/
+#main-discover {
+    padding: 1rem 10px;
+    min-height: 65vh;
+}
+
+#h1-dsc {
+    font-size: 2.3rem;
+    position: relative;
+    top:25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-color2);
+}
+
+.d-intro {
+    max-width: 800px;
+    padding: 1rem 10px;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Allura';
+    font-size: 1.5rem;
+}
+
+#card {
+    max-width: 450px;
+    min-width: 300px;
+    background-color: #a7e0daaf;
+    margin: 0 auto;
+    border: 1px solid #a7e0daaf;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "name"
+    "picture"
+    "para"
+    "address"
+    "learnmore";
+}
+
+#card p, 
+#card img {
+    margin: .5rem;
+}
+
+#card-pic-container {
+    width: 100%;
+    grid-area: picture;
+}
+
+#card-pic-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+
+}
+
+#card p {
+    font-size: .8rem;
+    text-align: left;
+    grid-area: para;
+}
+
+
+#main-discover {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+#card span {
+    display: block;
+    margin: .5rem;
+    font-size: .8rem;
+    font-style: italic;
+    grid-area: address;
+}
+
+#learn-more {
+    background-color: var(--accent-color1);
+    border: 1px solid var(--accent-color1);
+    border-radius: .6rem;
+    cursor: pointer;
+    min-width: 250px;
+    padding: .5rem 1rem;
+    font-family: 'Cardo', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 0 0 .7rem #157A6E;
+    margin: 1rem auto;
+    grid-area: learnmore;
+}
+
+#card h2 {
+    grid-area: name;
+    margin: 1rem auto .5rem;
+    color: var(--accent-color2);
+}
+
+#visits {
+    color: var(--accent-color2);
 }
