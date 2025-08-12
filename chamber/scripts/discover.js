@@ -20,7 +20,7 @@ const displayActivities = (activities) => {
         // create card element
         const div = document.createElement('div');
         div.setAttribute('class', 'd-card');
-        div.innerHTML = `<h2 id="card-title">${activity.name}</h2>
+        div.innerHTML = `<h2 class="card-title">${activity.name}</h2>
             <div class="card-pic-container"><img src=${activity.url} alt=${activity.name} loading="lazy"></div>
             <p>${activity.description}</p>
             <span>${activity.address}</span>
