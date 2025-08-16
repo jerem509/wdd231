@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="author" content="Jonel Charles">
+    <meta name="description" content="This page contains a form to help customers and potential ones to contact our staff which is always ready to serve our customers.">
+    <meta property="og:title" content="JCZOM Online Sales">
+    <meta property="og:description" content="This page contains a form to help customers and potential ones to contact our staff which is always ready to serve our customers.">
+    <meta property="og:url" content="https://jerem509.github.io/wdd231/finalproject/contact.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://jerem509.github.io/wdd231/finalproject/favicon-jczom.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/hamburgermenu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="logo-company" src="images/logo-jczom-darkblue.svg" alt="the logo of JCZOM" width="150">
+        </div>
+        <nav id="navbar">
+            <ul id="navlist">
+                <li><a href="index.html" class="nav-link">Products</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-menu"></div>
+    </header>
+
+    <main id="contact-main">
+        <h1>Get in Touch With Our Team</h1>
+        <section id="join-intro">
+            <div>
+                <h2 style="display: none;">Available to serve you.</h2>
+                <p>Have a question, need help, or ready to place your order? Our team is here to assist you every step of the way. Reach
+                out today and let’s make your shopping experience simple, fast, and enjoyable.</p>
+            </div>
+        </section>
+    
+        <div>
+            <form id="contact-form" action="thankyou.html" method="get">
+                <label>First Name<span>*</span>
+                    <input type="text" name="firstName" id="fname" autocomplete="family-name" required>
+                </label>
+                <label>First Name<span>*</span>
+                    <input type="text" name="lastName" id="lname" autocomplete="given-name" required>
+                </label>
+                <label>Email<span>*</span>
+                    <input type="email" name="email" id="email" placeholder="someone@mailprovider.com" autocomplete="email"
+                        title="Please enter a valid email address, e.g. user@example.com" required>
+                </label>
+                <label>Phone number<span>*</span>
+                    <input type="tel" name="phone" id="phone" placeholder="509xxxxxxxxx" autocomplete="tel" required>
+                </label>
+                <label for="message">Message<span>*</span>
+                    <textarea name="message" id="message" rows="7" required></textarea>
+                </label>
+                <button type="submit" id="contact-btn">Contact JCZOM</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-links">
+            <div class="footr-link" id="ft-link-first"><span><a href="#">Your Orders</a></span></div>
+            <div class="footr-link" id="ft-link-secnd"><span><a href="about.html">About Us</a></span></div>
+            <div class="footr-link" id="ft-link-third"><span><a href="contact.html">Contact Us</a></span></div>
+            <div class="footr-link" id="ft-link-fourth"><span><a href="#">Privacy Policy</a></span></div>
+            <div class="footr-link" id="ft-link-fifth"><span><a href="#">Terms of Use</a></span></div>
+        </div>
+        <div class="social">
+            <a href="https://www.github.com"><img src="images/github.svg" alt="GitHub icon"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.svg" alt="YouTube icon"></a>
+        </div>
+        <div id="address-n-copyrite">
+            <div id="copyr-container">
+                <p>Copyright &copy; <span id="currentyear"></span> Jonel Charles - Haiti</p>
+                <p>Last Modified : <span id="lastModified"></span></p>
+            </div>
+            <div id="jczom-adress">
+                <p>az, Rochasse</p>
+                <p>Jeremie, Grand'Anse</p>
+                <p>Haiti, HT7120</p>
+            </div>
+        </div>
+    </footer>
+</body>
+    
+</html>

@@ -203,6 +203,11 @@ footer p {
     text-align: center;
 }
 
+.abCard>div {
+    margin: 1rem;
+    line-height: 1.5;
+}
+
 /* ======================================== QUERIES =========================================== */
 
 @media only screen and (min-width: 600px) {

@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #f3f3f3;
+    --secondary-color: #292828;
+    --accent-color1: #000033;
+    --accent-color2: #51c7e1;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1500px;
+    font-size: 1rem;
+}
+
+#contact-main {
+    max-width: 1000px;
+    padding: 0 .5rem .5rem;
+    margin: 1rem auto;
+    
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem auto;
+    gap: 1rem;
+    padding: .3rem;
+}
+
+input,
+textarea {
+    display: block;
+    padding: .6rem;
+    min-width: 290px;
+}
+
+#contact-btn {
+    width: 250px;
+    padding: .6rem;
+    background-color: #51c7e1;
+    color: #000033;
+    border: 1px solid #51c7e1;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+label>span {
+    color: red;
+}
+
+@media only screen, (min-width: 400px) and (max-width: 800px) {
+    textarea {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    textarea {
+        width: 600px;
+    }
+}
+
+#thanky {
+    height: 50vh;
+}
+
+#thankyou-hdn {
+    text-align: center;
+}
+
+#info-container {
+    margin: 1rem auto;
+    max-width: 800px;
+    padding: .7rem;
+    border: 1px solid #000033;
+}
+

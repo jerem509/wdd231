@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Quality - Affordable Products</title>
+    <meta name="author" content="Jonel Charles">
+    <meta name="description" content="This page contains all type of items to wear for sale. 
+        Discover stylish clothes, fashionable shoes, and essential accessories for men and women. 
+        Shop our online collection for quality, comfort, and the latest trends at unbeatable prices. 
+        From casual wear to elegant outfits, find everything you need to elevate your style and 
+        refresh your wardrobe effortlessly.">
+    <meta property="og:title" content="JCZOM Online Sales">
+    <meta property="og:description" content="Discover stylish clothes, fashionable shoes, and essential
+     accessories for men and women. Shop our online collection for quality, comfort, and the latest 
+     trends at unbeatable prices. From casual wear to elegant outfits, find everything you need to elevate
+      your style and refresh your wardrobe effortlessly.">
+    <meta property="og:url" content="https://jerem509.github.io/wdd231/finalproject/index.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://jerem509.github.io/wdd231/finalproject/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon-jczom.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/hamburgermenu.js" defer></script>
+    <script src="scripts/products.js" type="module"></script>
+</head>
+
+<body id="products-body">
+    <header>
+        <div>
+            <img id="logo-company" src="images/logo-jczom-darkblue.svg" alt="the logo of JCZOM" width="150">
+        </div>
+        <nav id="navbar">
+            <ul id="navlist">
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-menu"></div>
+    </header>
+
+    <main>
+        <h1>Products sale gallery</h1>
+        <div id="recommendations">
+            <div id="recommended-block">
+                <h2>Recommended</h2>
+            </div>
+            <div id="recommended-products">
+                <div id="moving-banner"></div>
+            </div>
+        </div>
+        <div id="filter-icon">
+            <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 36h8v-4h-8v4zm-14-24v4h36v-4h-36zm6 14h24v-4h-24v4z" />
+                <path d="M0 0h48v48h-48z" fill="none" />
+            </svg>
+        </div>
+        <div id="ev-products">
+            <aside id="filter-products">
+                <h2 style="display: none;">Filters</h2>
+                <div id="gnl-filter-cont"> 
+                    <h3>Categories</h3>
+                    <div class="categories">
+                        <label><input type="radio" name="product-type" id="all" value="all" checked>All</label>
+                        <label><input type="radio" name="product-type" id="t-shirt" value="t-shirt">T-shirt</label>
+                        <label><input type="radio" name="product-type" id="jeans" value="jeans">Jeans</label>
+                        <label><input type="radio" name="product-type" id="dress" value="dress">Dress</label>
+                        <label><input type="radio" name="product-type" id="set" value="set">Set</label>
+                        <label><input type="radio" name="product-type" id="shoes" value="shoes">Shoes</label>
+                    </div>
+                </div>
+                <div id="gender-filter-cont"> 
+                    <h3>Gender</h3>
+                    <div class="categories">
+                        <label><input type="radio" name="gender" id="men" value="male" disabled>Men</label>
+                        <label><input type="radio" name="gender" id="women" value="female" disabled>Women</label>
+                    </div>  
+                </div>
+                <div id="price-filter-cont"> 
+                    <h3>Price</h3>
+                    <div class="categories">
+                        <label><input type="radio" name="price" value="19.99" disabled>$ 1-19.99</label>
+                        <label><input type="radio" name="price" value="49.99" disabled>$ 20-49.99</label>
+                        <label><input type="radio" name="price" value="99.99" disabled>$ 50-99.99</label>
+                        <label><input type="radio" name="price" value="249.99" disabled>$ 100-249.99</label>
+                        <label><input type="radio" name="price" value="399.99" disabled>$ 250-399.99</label>
+                        <label><input type="radio" name="price" value="600" disabled>$ 400-600</label>
+                    </div>
+                </div>
+            </aside>
+            <div>
+                <h2>Our Products</h2>
+                <div id="products-gallery"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-links">
+            <div class="footr-link" id="ft-link-first"><span><a href="#">Your Orders</a></span></div>
+            <div class="footr-link" id="ft-link-secnd"><span><a href="about.html">About Us</a></span></div>
+            <div class="footr-link" id="ft-link-third"><span><a href="contact.html">Contact Us</a></span></div>
+            <div class="footr-link" id="ft-link-fourth"><span><a href="#">Privacy Policy</a></span></div>
+            <div class="footr-link" id="ft-link-fifth"><span><a href="#">Terms of Use</a></span></div>
+        </div>
+        <div class="social">
+            <a href="https://www.github.com"><img src="images/github.svg" alt="GitHub icon"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.svg" alt="YouTube icon"></a>
+        </div>
+        <div id="address-n-copyrite">
+            <div id="copyr-container">
+                <p>Copyright &copy; <span id="currentyear"></span> Jonel Charles - Haiti</p>
+                <p>Last Modified : <span id="lastModified"></span></p>
+            </div>
+            <div id="jczom-adress">
+                <p>az, Rochasse</p>
+                <p>Jeremie, Grand'Anse</p>
+                <p>Haiti, HT7120</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

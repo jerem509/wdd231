@@ -1,0 +1,222 @@
+[
+  {
+    "gender": "female",
+    "name": "Navy Blue Single Shoulder Dress",
+    "type": "dress",
+    "size": "M",
+    "url_image": "images/prod/womensnavybluesingleshoulderdress.webp",
+    "available": 15,
+    "price": 60,
+    "description": "Elegant asymmetrical party and formal outfit in navy blue, machine washable A-line dress suitable for formal events, everyday to evening chic. Perfect vacation wear with ruffled hem, stylish detailing, and fashionable design for women."
+  },
+  {
+    "gender": "female",
+    "name": "Floral Square Neck Dress with Ruffled Hem",
+    "type": "dress",
+    "size": "M",
+    "url_image": "images/prod/floraldresswithshortsleeve.webp",
+    "available": 40,
+    "price": 45,
+    "description": "Elegant floral dress featuring a square neckline, ruffled hem, and short sleeves in light blue. Flowy A-line cut ideal for spring and summer wear."
+  },
+  {
+    "gender": "female",
+    "name": "French-Inspired Chiffon Dress with Butterfly Print",
+    "type": "dress",
+    "size": "S",
+    "url_image": "images/prod/frenchinspiredchiffondresswithbutterflyprint.webp",
+    "available": 0,
+    "price": 39,
+    "description": "Elegant women's chiffon dress inspired by French fashion with butterfly print, square neckline, ruched waist, and puff sleeves. Perfect for dates, weddings, parties, and casual outings."
+  },
+  {
+    "gender": "female",
+    "name": "Casual Leopard Print 'Cherry' Graphic T-Shirt",
+    "type": "t-shirt",
+    "size": "M",
+    "url_image": "images/prod/casualleopardprintcherryandglitter.webp",
+    "available": 5,
+    "price": 27,
+    "description": "Women's casual graphic T-shirt with leopard and cherry print, relaxed fit round neck, breathable mid-stretch fabric. Machine washable, spring and summer appropriate fast fashion top, durable digital print."
+  },
+  {
+    "gender": "female",
+    "name": "Casual Solid Color Short Sleeve Top & Wide Leg Pants Set",
+    "type": "casual two-piece set",
+    "size": "M",
+    "url_image": "images/prod/newWomensCasualSolidColorShort2.webp",
+    "available": 51,
+    "price": 40,
+    "description": "2025 new casual women's set including ribbed solid color short sleeve top and high-waisted wide leg pants in green. Designed for all-season comfort fit with breathable fabric."
+  },
+  {
+    "gender": "female",
+    "name": "ALDO Women's Vidish Heeled Sandal",
+    "type": "sandal",
+    "size": "8 US",
+    "url_image": "images/prod/aldosandalblack-women.webp",
+    "available": 20,
+    "price": 60,
+    "description": "Stylish heeled sandal from ALDO, open and breathable design. Perfect for formal or casual summer events, vacation wear."
+  },
+  {
+    "gender": "female",
+    "name": "Jessica Simpson Women's Immie Platform Sandal Heeled",
+    "type": "sandal",
+    "size": "8 US",
+    "url_image": "images/prod/jessicasimpsonsandal-women.webp",
+    "available": 1,
+    "price": 50,
+    "description": "Elegant platform heeled sandal with airy design by Jessica Simpson, providing style and comfort. Great for everyday to evening chic occasions."
+  },
+  {
+    "gender": "female",
+    "name": "WESTBRONCO Small Puffer Crescent Shoulder Bag",
+    "type": "bag",
+    "size": "One size",
+    "url_image": "images/prod/westbroncosmallshoulderbag-women.webp",
+    "available": 12,
+    "price": 70,
+    "description": "Lightweight nylon quilted small puffer shoulder bag with adjustable strap. Ideal for carrying essentials while keeping cool."
+  },
+  {
+    "gender": "female",
+    "name": "BESTKANG Leather Strap Watch",
+    "type": "watch",
+    "size": "One size",
+    "url_image": "images/prod/womenbestkangwatch.webp",
+    "available": 2,
+    "price": 250,
+    "description": "Elegant dainty women's vintage quartz wristwatch with leather strap and rectangle dial. Stylish and lightweight."
+  },
+  {
+    "gender": "female",
+    "name": "Lola Rose Dainty Watch",
+    "type": "watch",
+    "size": "One size",
+    "url_image": "images/prod/womenlolarosewatch.webp",
+    "available": 0,
+    "price": 140,
+    "description": "Dainty watch for women featuring mother of pearl dial and genuine leather strap. Comes in a stylish gift box. Vintage style suitable for lightweight daily wear."
+  },
+  {
+    "gender": "male",
+    "name": "Fossil Men's Wade Leather Bifold Wallet",
+    "type": "wallet",
+    "size": "One size",
+    "url_image": "images/prod/wallet.webp",
+    "available": 7,
+    "price": 35,
+    "description": "Black leather bifold wallet by Fossil with flip ID holder. Durable and slim for easy carry due to compact design."
+  },
+  {
+    "gender": "male",
+    "name": "SERMAN BRANDS Trifold RFID Blocking Wallet",
+    "type": "wallet",
+    "size": "One size",
+    "url_image": "images/prod/wallet2sermanbrands.webp",
+    "available": 33,
+    "price": 30,
+    "description": "RFID blocking genuine leather trifold wallet featuring 11 card slots and ID window. Slim design ideal for everyday carry."
+  },
+  {
+    "gender": "male",
+    "name": "Jousen Men's Loafers Dress Shoes",
+    "type": "shoes",
+    "size": "10 US",
+    "url_image": "images/prod/jousenloafers.webp",
+    "available": 0,
+    "price": 55,
+    "description": "Men's loafer dress shoes stylish and suitable for warm weather due to breathable leather design. Ideal for casual or semi-formal wear."
+  },
+  {
+    "gender": "male",
+    "name": "Loafer Premium Genuine Leather Men's Casual Shoes Slip On Mens Driving Penny Loafers for Men Lightweight Breathable",
+    "type": "shoes",
+    "size": "7.5 US",
+    "url_image": "images/prod/luoDengLangCasualLeatherLoaferSlipOn.webp",
+    "available": 18,
+    "price": 60,
+    "description": "Men's loafer dress shoes stylish and suitable for warm weather due to breathable leather design. Ideal for casual or semi-formal wear."
+  },
+  {
+    "gender": "male",
+    "name": "Cole Haan Men's Wyatt Bit Driver Loafers",
+    "type": "shoes",
+    "size": "10 US",
+    "url_image": "images/prod/colehaanloafers.webp",
+    "available": 72,
+    "price": 70,
+    "description": "Comfortable driving style loafers made of genuine leather. Lightweight and breathable, suitable for casual outings."
+  },
+  {
+    "gender": "female",
+    "name": "Coach Brooklyn Shoulder Bag 28 - Maple Color",
+    "type": "bag",
+    "size": "One size",
+    "url_image": "images/prod/coachbrooklynshoulderbag.webp",
+    "available": 27,
+    "price": 200,
+    "description": "Stylish shoulder bag with practical size, made of quality materials, designed for ease of carry. Appropriate for casual and travel use."
+  },
+  {
+    "gender": "male",
+    "name": "Go Tour Men’s Casual Leather Slip-on Loafers",
+    "type": "shoes",
+    "size": "10 US",
+    "url_image": "images/prod/slipOn-GoTour-CasualLeather.webp",
+    "available": 0,
+    "price": 50,
+    "description": "Casual leather slip-on loafers, breathable and lightweight, perfect for daily use. Easy to wear and stylish."
+  },
+  {
+    "gender": "female",
+    "name": "Elegant Off-Shoulder Puff Sleeve Dress with Geometric Lace Detailing",
+    "type": "dress",
+    "size": "S",
+    "url_image": "images/prod/womenselegantoffshoulderpuffsleeve.webp",
+    "available": 10,
+    "price": 40,
+    "description": "Elegant women's midi-length bodycon dress made of lightweight polyester, featuring an off-shoulder neckline and puff sleeves with geometric lace detailing. Includes a side slit and zipper closure. Perfect for spring and summer casual to formal occasions, combining style with breathable comfort."
+  },
+  {
+    "gender": "male",
+    "name": "Casual Sports Top and Bottom Set",
+    "type": "set",
+    "size": "M",
+    "url_image": "images/prod/cyancasualsportwearset.webp",
+    "available": 23,
+    "price": 38,
+    "description": "2025 new men's casual sportswear set including a crew neck short sleeve top and matching bottoms made of breathable polyester fabric."
+  },
+  {
+    "gender": "unisex",
+    "name": "KOONEXY Casual Sneakers - White & Black Low-Top Lace-Up Shoes with Golden Accents",
+    "type": "sneakers",
+    "size": "10 US",
+    "url_image": "images/prod/koonexyc-sneeakers.webp",
+    "available": 0,
+    "price": 42,
+    "description": "KOONEXY casual sneakers featuring a breathable PU/fabric upper with white and black low-top design accented by gold details. Durable PVC sole ideal for hiking, running, gym, and daily wear. Provides all-season comfort with stylish lace-up closure."
+  },
+  {
+    "gender": "male",
+    "name": "Mid Rise Slim Fit Tapered Leg Jean",
+    "type": "jeans",
+    "size": "32W x 32L",
+    "url_image": "images/prod/jeasnslimfit.webp",
+    "price": 50.6,
+    "available": 33,
+    "description": "Men's mid rise slim fit tapered leg jeans in indigo wash by GUESS. Designed for a modern, sleek silhouette combining comfort and style. Made from durable denim fabric, perfect for casual and semi-formal wear."
+  },
+  {
+    "gender": "male",
+    "name": "Kenneth Cole Men's Athletic Fit Jeans",
+    "type": "jeans",
+    "size": "32W x 32L",
+    "url_image": "images/prod/jeans-KennethCole.webp",
+    "price": 94,
+    "available": 13,
+    "description": "Men's athletic fit jeans with roomier fit in waist, hip, and thighs. Made from flexible stretch denim for comfort and movement. Features a straight leg design, durable fabric, and classic styling suitable for casual wear."
+  }
+]
