@@ -87,10 +87,11 @@ h2 {
 /* -------------------------- Products gallery ------------------------------- */
 #ev-products {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: auto 1fr;
 }
 
 #products-gallery {
+    grid-column: 2/3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -107,22 +108,8 @@ h2 {
 }
 
 .img-container {
-    /* border: 1px solid #ddd; */
     width: 160px;
     height: 160px;
-}
-
-@media only screen and (min-width: 450px) {
-    .card {
-        width: 200px;
-        height: auto;
-        background-color: white;
-    }
-
-    .img-container {
-        width: 200px;
-        height: 200px;
-    }
 }
 
 .img-container img {
@@ -147,7 +134,7 @@ h2 {
 
 .pd-name {
     display: -webkit-box;
-    line-clamp: 3;
+    /* line-clamp: 3; */
     -webkit-line-clamp: 3;
     -moz-box-orient: vertical;
     -webkit-box-orient: vertical;
@@ -215,7 +202,25 @@ dialog::backdrop {
 }
 
 /* =============================== MEDIA QUERIES ================================== */
+@media only screen and (min-width: 450px) {
+    .card {
+        width: 200px;
+        height: auto;
+        background-color: white;
+    }
+
+    .img-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 @media only screen and (min-width: 801px) {
+    #ev-products {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+    }
+
     #filter-icon {
         display: none;
     }
