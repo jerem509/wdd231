@@ -185,6 +185,35 @@ input[type="radio"] {
     margin-right: .5rem;
 }
 
+#my-modal {
+    max-width: 600px;
+    padding: 1rem .5rem;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background:#eee;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px #292828;
+    border-radius: 20px;
+}
+
+#my-modal .pd-info-box {
+    line-height: 1.5;
+}
+
+#my-modal #close-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: .3rem .3rem 0 .3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+dialog::backdrop {
+    background-color: #292828a8;
+}
+
 /* =============================== MEDIA QUERIES ================================== */
 @media only screen and (min-width: 801px) {
     #filter-icon {
