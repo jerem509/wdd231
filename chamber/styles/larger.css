@@ -15,11 +15,20 @@
     }
 
     header {
-        grid-template-columns: 95px auto auto auto;
+        grid-template-columns: 110px 1fr auto;
+        grid-template-rows: auto auto;
+        row-gap: 5px;
+    }
+
+    header span {
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
 
     header img {
         max-width: 95px;
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
 
     .hamburger {
@@ -27,20 +36,26 @@
     }
 
     #half-moon {
+        grid-column: 3/4;
+        grid-row: 1/2;
         justify-self: flex-end;
         grid-column: 4/5;
     }
 
     .navigation {
         display: inline-block;
-        grid-column: 3/4;
-        grid-row: 1/2;
+        border-top: 1px solid #eee;
+        background-color: #eee;
+        grid-column: 1/5;
+        grid-row: 2/3;
     }
 
     #navbar ul {
+        width: 70%;
+        margin: 0 auto;
         flex-direction: row;
         column-gap: .5rem;
-        justify-content: flex-end;
+        justify-content: space-around;
         padding-left: 10px;
         background-color: transparent;
     }
